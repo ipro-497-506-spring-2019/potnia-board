@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MP1484EN_board
+D Breakout board for MP1484EN buck converter
+$ENDCMP
+#
+$CMP Particle_Photon
+D Particle Photon
+$ENDCMP
+#
+$CMP TP4056_board
+D Breakout board for TP4056 LiPo charger with USB
+$ENDCMP
+#
+#End Doc Library

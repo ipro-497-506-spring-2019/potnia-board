@@ -1,0 +1,353 @@
+EESchema Schematic File Version 4
+LIBS:IoT IPRO (plant pot)-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L IPRO_smart_pot:MP1484EN_board PCB1
+U 1 1 5C70BA86
+P 2250 1450
+F 0 "PCB1" H 2250 1815 50  0000 C CNN
+F 1 "MP1484EN_board" H 2250 1724 50  0000 C CNN
+F 2 "IPRO_smart_pot:MP1484EN_board" H 2250 1500 50  0001 C CNN
+F 3 "" H 2250 1500 50  0001 C CNN
+	1    2250 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1150 1800 1150
+Wire Wire Line
+	1800 1150 1800 1550
+Wire Wire Line
+	1800 1550 1900 1550
+$Comp
+L IPRO_smart_pot:TP4056_board PCB2
+U 1 1 5C70BFAD
+P 3250 1650
+F 0 "PCB2" H 3250 2015 50  0000 C CNN
+F 1 "TP4056_board" H 3250 1924 50  0000 C CNN
+F 2 "IPRO_smart_pot:TP4056_board" H 3250 1700 50  0001 C CNN
+F 3 "" H 3250 1700 50  0001 C CNN
+	1    3250 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 1550 2900 1550
+Wire Wire Line
+	2600 1350 2750 1350
+Wire Wire Line
+	2750 1350 2750 1750
+Wire Wire Line
+	2750 1750 2900 1750
+$Comp
+L IPRO_smart_pot:Particle_Photon PCB3
+U 1 1 5C70C883
+P 6100 1900
+F 0 "PCB3" H 6100 2515 50  0000 C CNN
+F 1 "Particle_Photon" H 6100 2424 50  0000 C CNN
+F 2 "IPRO_smart_pot:photon_tht" H 6450 1900 50  0001 C CNN
+F 3 "" H 6450 1900 50  0001 C CNN
+	1    6100 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5C70CB48
+P 3900 2100
+F 0 "BT1" H 4018 2196 50  0000 L CNN
+F 1 "Battery_Cell" H 4018 2105 50  0000 L CNN
+F 2 "IPRO_smart_pot:1043_battery_holder" V 3900 2160 50  0001 C CNN
+F 3 "~" V 3900 2160 50  0001 C CNN
+	1    3900 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 1750 3700 1750
+$Comp
+L power:GND #PWR01
+U 1 1 5C70E132
+P 3700 1950
+F 0 "#PWR01" H 3700 1700 50  0001 C CNN
+F 1 "GND" H 3705 1777 50  0000 C CNN
+F 2 "" H 3700 1950 50  0001 C CNN
+F 3 "" H 3700 1950 50  0001 C CNN
+	1    3700 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 1550 3900 1550
+$Comp
+L power:GND #PWR03
+U 1 1 5C70E5E3
+P 3900 2250
+F 0 "#PWR03" H 3900 2000 50  0001 C CNN
+F 1 "GND" H 3905 2077 50  0000 C CNN
+F 2 "" H 3900 2250 50  0001 C CNN
+F 3 "" H 3900 2250 50  0001 C CNN
+	1    3900 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR02
+U 1 1 5C70EB4C
+P 3900 1500
+F 0 "#PWR02" H 3900 1350 50  0001 C CNN
+F 1 "+5V" H 3915 1673 50  0000 C CNN
+F 2 "" H 3900 1500 50  0001 C CNN
+F 3 "" H 3900 1500 50  0001 C CNN
+	1    3900 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 1550 3900 1500
+Wire Wire Line
+	3700 1750 3700 1950
+Wire Wire Line
+	3900 1600 3900 1550
+Connection ~ 3900 1550
+Wire Wire Line
+	3900 2200 3900 2250
+$Comp
+L power:+5V #PWR07
+U 1 1 5C70F763
+P 5600 1450
+F 0 "#PWR07" H 5600 1300 50  0001 C CNN
+F 1 "+5V" H 5615 1623 50  0000 C CNN
+F 2 "" H 5600 1450 50  0001 C CNN
+F 3 "" H 5600 1450 50  0001 C CNN
+	1    5600 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 1450 5600 1550
+Wire Wire Line
+	5600 1550 5700 1550
+$Comp
+L power:GND #PWR08
+U 1 1 5C730176
+P 5600 1650
+F 0 "#PWR08" H 5600 1400 50  0001 C CNN
+F 1 "GND" H 5605 1477 50  0000 C CNN
+F 2 "" H 5600 1650 50  0001 C CNN
+F 3 "" H 5600 1650 50  0001 C CNN
+	1    5600 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5600 1650 5700 1650
+$Comp
+L Device:R_PHOTO R3
+U 1 1 5C73081B
+P 5100 2150
+F 0 "R3" V 4775 2150 50  0000 C CNN
+F 1 "1M" V 4866 2150 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" V 5150 1900 50  0001 L CNN
+F 3 "~" H 5100 2100 50  0001 C CNN
+	1    5100 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5C7309E5
+P 4900 2150
+F 0 "#PWR06" H 4900 1900 50  0001 C CNN
+F 1 "GND" H 4905 1977 50  0000 C CNN
+F 2 "" H 4900 2150 50  0001 C CNN
+F 3 "" H 4900 2150 50  0001 C CNN
+	1    4900 2150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4900 2150 4950 2150
+$Comp
+L Device:R R4
+U 1 1 5C731060
+P 5450 2250
+F 0 "R4" V 5243 2250 50  0000 C CNN
+F 1 "10K" V 5334 2250 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5380 2250 50  0001 C CNN
+F 3 "~" H 5450 2250 50  0001 C CNN
+	1    5450 2250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5250 2150 5300 2150
+Wire Wire Line
+	5300 2150 5300 2250
+Connection ~ 5300 2150
+Wire Wire Line
+	5300 2150 5700 2150
+Wire Wire Line
+	5600 2250 5700 2250
+$Comp
+L Device:R R1
+U 1 1 5C7317EB
+P 4600 2450
+F 0 "R1" H 4530 2404 50  0000 R CNN
+F 1 "100K" H 4530 2495 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4530 2450 50  0001 C CNN
+F 3 "~" H 4600 2450 50  0001 C CNN
+	1    4600 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5C7318BB
+P 4600 2850
+F 0 "R2" H 4670 2896 50  0000 L CNN
+F 1 "100K" H 4670 2805 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4530 2850 50  0001 C CNN
+F 3 "~" H 4600 2850 50  0001 C CNN
+	1    4600 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5C731BC1
+P 4600 3050
+F 0 "#PWR05" H 4600 2800 50  0001 C CNN
+F 1 "GND" H 4605 2877 50  0000 C CNN
+F 2 "" H 4600 3050 50  0001 C CNN
+F 3 "" H 4600 3050 50  0001 C CNN
+	1    4600 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR04
+U 1 1 5C731BDE
+P 4600 2250
+F 0 "#PWR04" H 4600 2100 50  0001 C CNN
+F 1 "+5V" H 4615 2423 50  0000 C CNN
+F 2 "" H 4600 2250 50  0001 C CNN
+F 3 "" H 4600 2250 50  0001 C CNN
+	1    4600 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2250 4600 2300
+Wire Wire Line
+	4600 3000 4600 3050
+Wire Wire Line
+	4600 2600 4600 2650
+Wire Wire Line
+	4600 2650 5350 2650
+Wire Wire Line
+	5350 2650 5350 2350
+Wire Wire Line
+	5350 2350 5700 2350
+Connection ~ 4600 2650
+Wire Wire Line
+	4600 2650 4600 2700
+$Comp
+L Sensor_Temperature:DS18S20 U1
+U 1 1 5C732BF9
+P 7450 1850
+F 0 "U1" H 7221 1896 50  0000 R CNN
+F 1 "DS18S20" H 7221 1805 50  0000 R CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6450 1600 50  0001 C CNN
+F 3 "http://datasheets.maximintegrated.com/en/ds/DS18S20.pdf" H 7300 2100 50  0001 C CNN
+	1    7450 1850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5C732CC2
+P 7100 1600
+F 0 "R5" H 7170 1646 50  0000 L CNN
+F 1 "4.7K" H 7170 1555 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7030 1600 50  0001 C CNN
+F 3 "~" H 7100 1600 50  0001 C CNN
+	1    7100 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 2250 7450 2250
+Wire Wire Line
+	7450 2250 7450 2150
+Wire Wire Line
+	7150 1850 7100 1850
+Wire Wire Line
+	7100 1850 7100 1750
+Wire Wire Line
+	7100 1850 7100 2150
+Wire Wire Line
+	7100 2150 6550 2150
+Connection ~ 7100 1850
+Wire Wire Line
+	7100 1450 7450 1450
+Wire Wire Line
+	7450 1450 7450 1550
+Wire Wire Line
+	7100 1450 6950 1450
+Wire Wire Line
+	6950 1450 6950 2050
+Wire Wire Line
+	6950 2050 6550 2050
+Connection ~ 7100 1450
+Wire Wire Line
+	1500 1350 1900 1350
+$Comp
+L Device:Fuse F1
+U 1 1 5C738A46
+P 3900 1750
+F 0 "F1" H 3960 1796 50  0000 L CNN
+F 1 "1A" H 3960 1705 50  0000 L CNN
+F 2 "IPRO_smart_pot:0PTF0075P_Littelfuse_5x20mm_holder" V 3830 1750 50  0001 C CNN
+F 3 "~" H 3900 1750 50  0001 C CNN
+	1    3900 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L IPRO_smart_pot:STEMMA_sensor PCB4
+U 1 1 5C73D987
+P 7200 2600
+F 0 "PCB4" H 7378 2651 50  0000 L CNN
+F 1 "STEMMA_sensor" H 7378 2560 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7200 2600 50  0001 C CNN
+F 3 "" H 7200 2600 50  0001 C CNN
+	1    7200 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Barrel_Jack J1
+U 1 1 5C746564
+P 1200 1250
+F 0 "J1" H 1255 1575 50  0000 C CNN
+F 1 "Barrel_Jack" H 1255 1484 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 1250 1210 50  0001 C CNN
+F 3 "~" H 1250 1210 50  0001 C CNN
+	1    1200 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 2650 6850 2650
+Wire Wire Line
+	6550 2550 6700 2550
+Wire Wire Line
+	6700 2550 6700 2750
+Wire Wire Line
+	6700 2750 6850 2750
+Wire Wire Line
+	6550 2450 6750 2450
+Wire Wire Line
+	6750 2450 6750 2550
+Wire Wire Line
+	6750 2550 6850 2550
+Wire Wire Line
+	6850 2450 6800 2450
+Wire Wire Line
+	6800 2450 6800 2350
+Wire Wire Line
+	6800 2350 6550 2350
+$EndSCHEMATC
