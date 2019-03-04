@@ -5,10 +5,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Potnia PCB"
+Date "2019-03-04"
+Rev "v0"
+Comp "IPRO 497-506 Spring 2019 Team 3"
 Comment1 ""
 Comment2 ""
 Comment3 ""
