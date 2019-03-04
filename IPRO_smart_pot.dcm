@@ -1,7 +1,15 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP Fairchild_FDC6331L
+D FDC6331L Integrated Load Switch
+$ENDCMP
+#
 $CMP MP1484EN_board
 D Breakout board for MP1484EN buck converter
+$ENDCMP
+#
+$CMP Microchip_MCP112-315
+D MCP112 Micropower Voltage Detector
 $ENDCMP
 #
 $CMP Particle_Photon
