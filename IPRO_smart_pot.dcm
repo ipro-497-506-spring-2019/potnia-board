@@ -12,6 +12,10 @@ $CMP Microchip_MCP112-315
 D MCP112 Micropower Voltage Detector
 $ENDCMP
 #
+$CMP Particle_Argon
+D Particle Argon: https://docs.particle.io/assets/images/argon/argon-pinout-v1.0.pdf
+$ENDCMP
+#
 $CMP Particle_Photon
 D Particle Photon
 $ENDCMP
