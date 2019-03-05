@@ -20,6 +20,12 @@ $CMP Particle_Photon
 D Particle Photon
 $ENDCMP
 #
+$CMP Q_DUAL_NMOS_S1G1S2G2D1D1D2D2
+D Dual NMOS/NMOS transistor, 6-pin package
+K dual nmosfet nmos/nmos
+F ~
+$ENDCMP
+#
 $CMP TP4056_board
 D Breakout board for TP4056 LiPo charger with USB
 $ENDCMP
