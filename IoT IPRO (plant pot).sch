@@ -238,7 +238,7 @@ U 1 1 5C7DC74D
 P 4600 2950
 F 0 "PCB3" H 4625 3965 50  0000 C CNN
 F 1 "Particle_Argon" H 4625 3874 50  0000 C CNN
-F 2 "IPRO_smart_pot:photon_tht" H 5100 2950 50  0001 C CNN
+F 2 "IPRO_smart_pot:argon_tht" H 5100 2950 50  0001 C CNN
 F 3 "" H 5100 2950 50  0001 C CNN
 	1    4600 2950
 	1    0    0    -1  
