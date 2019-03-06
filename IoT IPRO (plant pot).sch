@@ -258,7 +258,7 @@ P 2500 3450
 F 0 "U3" H 2350 3815 50  0000 C CNN
 F 1 "AP9101C-SOT25" H 2350 3724 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 2450 3400 50  0001 C CNN
-F 3 "" H 2450 3400 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/AP9101C.pdf" H 2450 3400 50  0001 C CNN
 	1    2500 3450
 	1    0    0    -1  
 $EndComp
@@ -355,7 +355,7 @@ P 2150 4350
 F 0 "Q1" V 2050 4250 50  0000 C CNN
 F 1 "Q_DUAL_NMOS_S1G1S2G2D1D1D2D2" V 2400 4450 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2350 4350 50  0001 C CNN
-F 3 "~" H 2350 4350 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/DMN2029USD.pdf" H 2350 4350 50  0001 C CNN
 	1    2150 4350
 	0    1    1    0   
 $EndComp
@@ -366,7 +366,7 @@ P 2650 4350
 F 0 "Q1" V 2550 4450 50  0000 C CNN
 F 1 "Q_DUAL_NMOS_S1G1S2G2D1D1D2D2" V 3000 4750 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2850 4350 50  0001 C CNN
-F 3 "~" H 2850 4350 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/DMN2029USD.pdf" H 2850 4350 50  0001 C CNN
 	2    2650 4350
 	0    -1   1    0   
 $EndComp
