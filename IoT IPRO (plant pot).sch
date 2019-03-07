@@ -174,17 +174,6 @@ F 3 "" H 5700 3650 50  0001 C CNN
 	1    5700 3650
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Barrel_Jack J1
-U 1 1 5C746564
-P 1200 1450
-F 0 "J1" H 1255 1775 50  0000 C CNN
-F 1 "Barrel_Jack" H 1255 1684 50  0000 C CNN
-F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 1250 1410 50  0001 C CNN
-F 3 "~" H 1250 1410 50  0001 C CNN
-	1    1200 1450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5050 3700 5350 3700
 Wire Wire Line
@@ -393,28 +382,6 @@ NoConn ~ 4200 3500
 NoConn ~ 4200 3600
 NoConn ~ 5050 2900
 NoConn ~ 5050 3000
-$Comp
-L power:PWR_FLAG #FLG0101
-U 1 1 5C84E939
-P 1700 1350
-F 0 "#FLG0101" H 1700 1425 50  0001 C CNN
-F 1 "PWR_FLAG" H 1700 1524 50  0000 C CNN
-F 2 "" H 1700 1350 50  0001 C CNN
-F 3 "~" H 1700 1350 50  0001 C CNN
-	1    1700 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:PWR_FLAG #FLG0102
-U 1 1 5C84EC06
-P 1700 1550
-F 0 "#FLG0102" H 1700 1625 50  0001 C CNN
-F 1 "PWR_FLAG" H 1700 1723 50  0000 C CNN
-F 2 "" H 1700 1550 50  0001 C CNN
-F 3 "~" H 1700 1550 50  0001 C CNN
-	1    1700 1550
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	3450 1550 3550 1550
 Wire Wire Line
@@ -434,14 +401,31 @@ Wire Wire Line
 	2600 1550 2750 1550
 Wire Wire Line
 	3450 1350 5100 1350
-Connection ~ 1700 1550
+$Comp
+L Device:Solar_Cells SC?
+U 1 1 5C87557F
+P 1200 1450
+F 0 "SC?" H 1308 1496 50  0000 L CNN
+F 1 "Solar_Cells" H 1308 1405 50  0000 L CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" V 1200 1510 50  0001 C CNN
+F 3 "~" V 1200 1510 50  0001 C CNN
+	1    1200 1450
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	1700 1550 1900 1550
+	1200 1250 1200 1200
 Wire Wire Line
-	1500 1550 1700 1550
+	1200 1650 1200 1700
 Wire Wire Line
-	1500 1350 1700 1350
-Connection ~ 1700 1350
+	1800 1200 1800 1350
 Wire Wire Line
-	1700 1350 1900 1350
+	1800 1350 1900 1350
+Wire Wire Line
+	1200 1200 1800 1200
+Wire Wire Line
+	1800 1700 1800 1550
+Wire Wire Line
+	1800 1550 1900 1550
+Wire Wire Line
+	1200 1700 1800 1700
 $EndSCHEMATC
