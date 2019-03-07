@@ -30,12 +30,12 @@ Wire Wire Line
 $Comp
 L Device:Battery_Cell BT1
 U 1 1 5C70CB48
-P 1350 4150
-F 0 "BT1" H 1468 4246 50  0000 L CNN
-F 1 "Battery_Cell" H 1468 4155 50  0000 L CNN
-F 2 "IPRO_smart_pot:1043_battery_holder" V 1350 4210 50  0001 C CNN
-F 3 "~" V 1350 4210 50  0001 C CNN
-	1    1350 4150
+P 1350 3750
+F 0 "BT1" H 1468 3846 50  0000 L CNN
+F 1 "Battery_Cell" H 1468 3755 50  0000 L CNN
+F 2 "IPRO_smart_pot:1043_battery_holder" V 1350 3810 50  0001 C CNN
+F 3 "~" V 1350 3810 50  0001 C CNN
+	1    1350 3750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -155,12 +155,12 @@ Wire Wire Line
 $Comp
 L Device:Fuse F1
 U 1 1 5C738A46
-P 1350 3700
-F 0 "F1" H 1410 3746 50  0000 L CNN
-F 1 "1A" H 1410 3655 50  0000 L CNN
-F 2 "IPRO_smart_pot:0PTF0075P_Littelfuse_5x20mm_holder" V 1280 3700 50  0001 C CNN
-F 3 "~" H 1350 3700 50  0001 C CNN
-	1    1350 3700
+P 1350 4100
+F 0 "F1" H 1410 4146 50  0000 L CNN
+F 1 "1A" H 1410 4055 50  0000 L CNN
+F 2 "IPRO_smart_pot:0PTF0075P_Littelfuse_5x20mm_holder" V 1280 4100 50  0001 C CNN
+F 3 "~" H 1350 4100 50  0001 C CNN
+	1    1350 4100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -237,7 +237,7 @@ U 1 1 5C7EF554
 P 1550 3350
 F 0 "R1" V 1343 3350 50  0000 C CNN
 F 1 "330" V 1434 3350 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1480 3350 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 1480 3350 50  0001 C CNN
 F 3 "~" H 1550 3350 50  0001 C CNN
 	1    1550 3350
 	0    1    1    0   
@@ -259,7 +259,7 @@ U 1 1 5C7EF65C
 P 2900 3750
 F 0 "R2" H 2970 3796 50  0000 L CNN
 F 1 "2.7k" H 2970 3705 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2830 3750 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 2830 3750 50  0001 C CNN
 F 3 "~" H 2900 3750 50  0001 C CNN
 	1    2900 3750
 	1    0    0    -1  
