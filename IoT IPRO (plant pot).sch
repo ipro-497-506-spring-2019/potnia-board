@@ -384,7 +384,7 @@ U 1 1 5C87557F
 P 1200 1450
 F 0 "SC1" H 1308 1496 50  0000 L CNN
 F 1 "Solar_Cells" H 1308 1405 50  0000 L CNN
-F 2 "Connector_BarrelJack:BarrelJack_Horizontal" V 1200 1510 50  0001 C CNN
+F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" V 1200 1510 50  0001 C CNN
 F 3 "~" V 1200 1510 50  0001 C CNN
 	1    1200 1450
 	1    0    0    -1  
