@@ -210,17 +210,6 @@ Wire Wire Line
 Wire Wire Line
 	5050 3200 5800 3200
 $Comp
-L IPRO_smart_pot:AP9101C-SOT25 U3
-U 1 1 5C7ED25E
-P 2500 3450
-F 0 "U3" H 2350 3815 50  0000 C CNN
-F 1 "AP9101C-SOT25" H 2350 3724 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 2450 3400 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/AP9101C.pdf" H 2450 3400 50  0001 C CNN
-	1    2500 3450
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+BATT #PWR02
 U 1 1 5C7EF3BD
 P 1350 3050
@@ -475,4 +464,15 @@ F 3 "~" H 1350 3850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Connection ~ 1350 3850
+$Comp
+L IPRO_smart_pot:AP9101C-SOT26 U2
+U 1 1 5C830316
+P 2500 3450
+F 0 "U2" H 2350 3815 50  0000 C CNN
+F 1 "AP9101C-SOT26" H 2350 3724 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-6_Handsoldering" H 2450 3400 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/AP9101C.pdf" H 2450 3400 50  0001 C CNN
+	1    2500 3450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
