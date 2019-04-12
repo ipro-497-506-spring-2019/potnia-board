@@ -76,27 +76,27 @@ $EndComp
 $Comp
 L Device:R_PHOTO R3
 U 1 1 5C73081B
-P 3600 3100
-F 0 "R3" V 3275 3100 50  0000 C CNN
-F 1 "1M" V 3366 3100 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" V 3650 2850 50  0001 L CNN
-F 3 "~" H 3600 3050 50  0001 C CNN
-	1    3600 3100
+P 3600 3000
+F 0 "R3" V 3275 3000 50  0000 C CNN
+F 1 "1M" V 3366 3000 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" V 3650 2750 50  0001 L CNN
+F 3 "~" H 3600 2950 50  0001 C CNN
+	1    3600 3000
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR06
 U 1 1 5C7309E5
-P 3400 3100
-F 0 "#PWR06" H 3400 2850 50  0001 C CNN
-F 1 "GND" H 3405 2927 50  0000 C CNN
-F 2 "" H 3400 3100 50  0001 C CNN
-F 3 "" H 3400 3100 50  0001 C CNN
-	1    3400 3100
+P 3400 3000
+F 0 "#PWR06" H 3400 2750 50  0001 C CNN
+F 1 "GND" H 3405 2827 50  0000 C CNN
+F 2 "" H 3400 3000 50  0001 C CNN
+F 3 "" H 3400 3000 50  0001 C CNN
+	1    3400 3000
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3400 3100 3450 3100
+	3400 3000 3450 3000
 $Comp
 L Device:R R4
 U 1 1 5C731060
@@ -108,13 +108,6 @@ F 3 "~" H 3950 3000 50  0001 C CNN
 	1    3950 3000
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3750 3100 3800 3100
-Wire Wire Line
-	3800 3000 3800 3100
-Connection ~ 3800 3100
-Wire Wire Line
-	3800 3100 4200 3100
 Wire Wire Line
 	4100 3000 4200 3000
 $Comp
@@ -475,4 +468,11 @@ F 3 "https://www.diodes.com/assets/Datasheets/AP9101C.pdf" H 2450 3400 50  0001 
 	1    2500 3450
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3800 3000 3800 3100
+Wire Wire Line
+	3800 3100 4200 3100
+Wire Wire Line
+	3750 3000 3800 3000
+Connection ~ 3800 3000
 $EndSCHEMATC
