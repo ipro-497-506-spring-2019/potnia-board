@@ -76,27 +76,27 @@ $EndComp
 $Comp
 L Device:R_PHOTO R3
 U 1 1 5C73081B
-P 3600 3000
-F 0 "R3" V 3275 3000 50  0000 C CNN
-F 1 "1M" V 3366 3000 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" V 3650 2750 50  0001 L CNN
-F 3 "~" H 3600 2950 50  0001 C CNN
-	1    3600 3000
+P 3550 3000
+F 0 "R3" V 3225 3000 50  0000 C CNN
+F 1 "1M" V 3316 3000 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" V 3600 2750 50  0001 L CNN
+F 3 "~" H 3550 2950 50  0001 C CNN
+	1    3550 3000
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR06
 U 1 1 5C7309E5
-P 3400 3000
-F 0 "#PWR06" H 3400 2750 50  0001 C CNN
-F 1 "GND" H 3405 2827 50  0000 C CNN
-F 2 "" H 3400 3000 50  0001 C CNN
-F 3 "" H 3400 3000 50  0001 C CNN
-	1    3400 3000
+P 3350 3000
+F 0 "#PWR06" H 3350 2750 50  0001 C CNN
+F 1 "GND" H 3355 2827 50  0000 C CNN
+F 2 "" H 3350 3000 50  0001 C CNN
+F 3 "" H 3350 3000 50  0001 C CNN
+	1    3350 3000
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3400 3000 3450 3000
+	3350 3000 3400 3000
 $Comp
 L Device:R R4
 U 1 1 5C731060
@@ -159,34 +159,14 @@ $EndComp
 $Comp
 L IPRO_smart_pot:STEMMA_sensor PCB4
 U 1 1 5C73D987
-P 5700 3650
-F 0 "PCB4" H 5878 3701 50  0000 L CNN
-F 1 "STEMMA_sensor" H 5878 3610 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 5700 3650 50  0001 C CNN
-F 3 "" H 5700 3650 50  0001 C CNN
-	1    5700 3650
+P 6850 3550
+F 0 "PCB4" H 7028 3601 50  0000 L CNN
+F 1 "STEMMA_sensor" H 7028 3510 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6850 3550 50  0001 C CNN
+F 3 "" H 6850 3550 50  0001 C CNN
+	1    6850 3550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5050 3700 5350 3700
-Wire Wire Line
-	5050 3600 5200 3600
-Wire Wire Line
-	5200 3600 5200 3800
-Wire Wire Line
-	5200 3800 5350 3800
-Wire Wire Line
-	5050 3500 5250 3500
-Wire Wire Line
-	5250 3500 5250 3600
-Wire Wire Line
-	5250 3600 5350 3600
-Wire Wire Line
-	5350 3500 5300 3500
-Wire Wire Line
-	5300 3500 5300 3400
-Wire Wire Line
-	5300 3400 5050 3400
 $Comp
 L IPRO_smart_pot:Particle_Argon PCB3
 U 1 1 5C7DC74D
@@ -205,12 +185,12 @@ Wire Wire Line
 $Comp
 L power:+BATT #PWR02
 U 1 1 5C7EF3BD
-P 1350 3050
-F 0 "#PWR02" H 1350 2900 50  0001 C CNN
-F 1 "+BATT" H 1365 3223 50  0000 C CNN
-F 2 "" H 1350 3050 50  0001 C CNN
-F 3 "" H 1350 3050 50  0001 C CNN
-	1    1350 3050
+P 1350 2450
+F 0 "#PWR02" H 1350 2300 50  0001 C CNN
+F 1 "+BATT" H 1365 2623 50  0000 C CNN
+F 2 "" H 1350 2450 50  0001 C CNN
+F 3 "" H 1350 2450 50  0001 C CNN
+	1    1350 2450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -344,7 +324,6 @@ Wire Wire Line
 Wire Wire Line
 	2700 3400 2900 3400
 NoConn ~ 4200 2200
-NoConn ~ 4200 2300
 NoConn ~ 4200 2400
 NoConn ~ 5050 2700
 NoConn ~ 4200 2600
@@ -379,8 +358,6 @@ Wire Wire Line
 	1800 1200 1800 1350
 Wire Wire Line
 	1800 1350 1900 1350
-Wire Wire Line
-	1200 1200 1450 1200
 Wire Wire Line
 	1800 1700 1800 1550
 Wire Wire Line
@@ -418,17 +395,14 @@ Wire Wire Line
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5C881383
-P 1450 1200
-F 0 "#FLG0101" H 1450 1275 50  0001 C CNN
-F 1 "PWR_FLAG" H 1450 1374 50  0000 C CNN
-F 2 "" H 1450 1200 50  0001 C CNN
-F 3 "~" H 1450 1200 50  0001 C CNN
-	1    1450 1200
+P 1600 1200
+F 0 "#FLG0101" H 1600 1275 50  0001 C CNN
+F 1 "PWR_FLAG" H 1600 1374 50  0000 C CNN
+F 2 "" H 1600 1200 50  0001 C CNN
+F 3 "~" H 1600 1200 50  0001 C CNN
+	1    1600 1200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1450 1200 1800 1200
-Connection ~ 1450 1200
 $Comp
 L power:PWR_FLAG #FLG0102
 U 1 1 5C8813B7
@@ -469,10 +443,254 @@ F 3 "https://www.diodes.com/assets/Datasheets/AP9101C.pdf" H 2450 3400 50  0001 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3800 3000 3800 3100
+	3750 3000 3750 3100
 Wire Wire Line
-	3800 3100 4200 3100
+	3700 3000 3750 3000
+Wire Wire Line
+	3750 3100 4200 3100
 Wire Wire Line
 	3750 3000 3800 3000
-Connection ~ 3800 3000
+Connection ~ 3750 3000
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5CB1CC07
+P 3800 4700
+F 0 "TP3" H 3750 4900 50  0000 L CNN
+F 1 "TestPoint" H 3650 5000 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm" H 4000 4700 50  0001 C CNN
+F 3 "~" H 4000 4700 50  0001 C CNN
+	1    3800 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5CB1CC7B
+P 3800 4750
+F 0 "#PWR05" H 3800 4500 50  0001 C CNN
+F 1 "GND" H 3805 4577 50  0000 C CNN
+F 2 "" H 3800 4750 50  0001 C CNN
+F 3 "" H 3800 4750 50  0001 C CNN
+	1    3800 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR09
+U 1 1 5CB1CCA8
+P 4200 4650
+F 0 "#PWR09" H 4200 4500 50  0001 C CNN
+F 1 "+5V" H 4215 4823 50  0000 C CNN
+F 2 "" H 4200 4650 50  0001 C CNN
+F 3 "" H 4200 4650 50  0001 C CNN
+	1    4200 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR07
+U 1 1 5CB1CD9F
+P 4050 2300
+F 0 "#PWR07" H 4050 2150 50  0001 C CNN
+F 1 "+3.3V" H 4065 2473 50  0000 C CNN
+F 2 "" H 4050 2300 50  0001 C CNN
+F 3 "" H 4050 2300 50  0001 C CNN
+	1    4050 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 2300 4200 2300
+$Comp
+L power:+3.3V #PWR010
+U 1 1 5CB1E829
+P 4600 4650
+F 0 "#PWR010" H 4600 4500 50  0001 C CNN
+F 1 "+3.3V" H 4615 4823 50  0000 C CNN
+F 2 "" H 4600 4650 50  0001 C CNN
+F 3 "" H 4600 4650 50  0001 C CNN
+	1    4600 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR011
+U 1 1 5CB1E911
+P 5000 4650
+F 0 "#PWR011" H 5000 4500 50  0001 C CNN
+F 1 "+BATT" H 5015 4823 50  0000 C CNN
+F 2 "" H 5000 4650 50  0001 C CNN
+F 3 "" H 5000 4650 50  0001 C CNN
+	1    5000 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5CB1E98C
+P 1200 1200
+F 0 "TP1" H 1000 1350 50  0000 L CNN
+F 1 "TestPoint" H 800 1250 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm" H 1400 1200 50  0001 C CNN
+F 3 "~" H 1400 1200 50  0001 C CNN
+	1    1200 1200
+	1    0    0    -1  
+$EndComp
+Connection ~ 1200 1200
+Connection ~ 1600 1200
+Wire Wire Line
+	1600 1200 1800 1200
+Wire Wire Line
+	1200 1200 1600 1200
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5CB1EBF8
+P 1200 1700
+F 0 "TP2" H 1250 1750 50  0000 L CNN
+F 1 "TestPoint" H 1250 1850 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm" H 1400 1700 50  0001 C CNN
+F 3 "~" H 1400 1700 50  0001 C CNN
+	1    1200 1700
+	-1   0    0    1   
+$EndComp
+Connection ~ 1200 1700
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5CB1EE4E
+P 4200 4700
+F 0 "TP4" H 4250 4900 50  0000 R CNN
+F 1 "TestPoint" H 4350 4400 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm" H 4400 4700 50  0001 C CNN
+F 3 "~" H 4400 4700 50  0001 C CNN
+	1    4200 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5CB1EEDC
+P 4600 4700
+F 0 "TP5" H 4650 4900 50  0000 R CNN
+F 1 "TestPoint" H 4750 4400 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm" H 4800 4700 50  0001 C CNN
+F 3 "~" H 4800 4700 50  0001 C CNN
+	1    4600 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5CB1EF22
+P 5000 4700
+F 0 "TP6" H 5050 4900 50  0000 R CNN
+F 1 "TestPoint" H 5150 4400 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm" H 5200 4700 50  0001 C CNN
+F 3 "~" H 5200 4700 50  0001 C CNN
+	1    5000 4700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4200 4650 4200 4700
+Wire Wire Line
+	4600 4650 4600 4700
+Wire Wire Line
+	5000 4650 5000 4700
+Wire Wire Line
+	3800 4700 3800 4750
+Entry Wire Line
+	5300 3400 5400 3500
+Entry Wire Line
+	5300 3500 5400 3600
+Entry Wire Line
+	5300 3600 5400 3700
+Entry Wire Line
+	5300 3700 5400 3800
+Entry Wire Line
+	6150 3500 6250 3400
+Entry Wire Line
+	6150 3600 6250 3500
+Entry Wire Line
+	6150 3700 6250 3600
+Entry Wire Line
+	6150 3800 6250 3700
+Wire Wire Line
+	6250 3400 6500 3400
+Wire Wire Line
+	6250 3500 6500 3500
+Wire Wire Line
+	6500 3600 6250 3600
+Wire Wire Line
+	6250 3700 6500 3700
+Text Label 5050 3400 0    50   ~ 0
+i2cGND
+Text Label 6250 3500 0    50   ~ 0
+i2cVCC
+Wire Wire Line
+	5050 3400 5300 3400
+Wire Wire Line
+	5050 3500 5300 3500
+Wire Wire Line
+	5050 3600 5300 3600
+Wire Wire Line
+	5050 3700 5300 3700
+Text Label 5050 3500 0    50   ~ 0
+i2cVCC
+Text Label 6250 3400 0    50   ~ 0
+i2cGND
+Text Label 5050 3600 0    50   ~ 0
+i2cSCL
+Text Label 6250 3700 0    50   ~ 0
+i2cSCL
+Text Label 6250 3600 0    50   ~ 0
+i2cSDA
+Entry Wire Line
+	5600 4550 5700 4650
+$Comp
+L Connector:TestPoint TP8
+U 1 1 5CB5A152
+P 5700 4700
+F 0 "TP8" H 5650 4800 50  0000 R CNN
+F 1 "TestPoint" H 5750 4600 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm" H 5900 4700 50  0001 C CNN
+F 3 "~" H 5900 4700 50  0001 C CNN
+	1    5700 4700
+	-1   0    0    1   
+$EndComp
+Text Label 5050 3700 0    50   ~ 0
+i2cSDA
+Text Label 5700 4700 0    50   ~ 0
+i2cSDA
+Wire Wire Line
+	5700 4650 5700 4700
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5CB64F7C
+P 5500 4700
+F 0 "TP7" H 5650 4800 50  0000 R CNN
+F 1 "TestPoint" H 5800 4600 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm" H 5700 4700 50  0001 C CNN
+F 3 "~" H 5700 4700 50  0001 C CNN
+	1    5500 4700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5500 4700 5500 4650
+Entry Wire Line
+	5500 4650 5600 4550
+Text Label 5500 4700 2    50   ~ 0
+i2cSCL
+Wire Bus Line
+	5400 3900 5600 3900
+Wire Bus Line
+	5600 4550 5600 3900
+Connection ~ 5600 3900
+Wire Bus Line
+	5600 3900 6150 3900
+Wire Bus Line
+	6150 3500 6150 3900
+Wire Bus Line
+	5400 3500 5400 3900
+$Comp
+L Switch:SW_DIP_x01 SW?
+U 1 1 5CB12312
+P 1350 2750
+F 0 "SW?" V 1304 2880 50  0000 L CNN
+F 1 "SW_DIP_x01" V 1395 2880 50  0000 L CNN
+F 2 "" H 1350 2750 50  0001 C CNN
+F 3 "" H 1350 2750 50  0001 C CNN
+	1    1350 2750
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
