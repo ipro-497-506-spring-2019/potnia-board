@@ -621,9 +621,9 @@ L pspice:INDUCTOR L1
 U 1 1 5CB98371
 P 2500 1450
 F 0 "L1" H 2500 1665 50  0000 C CNN
-F 1 "50uH" H 2500 1574 50  0000 C CNN
-F 2 "" H 2500 1450 50  0001 C CNN
-F 3 "" H 2500 1450 50  0001 C CNN
+F 1 "47uH" H 2500 1574 50  0000 C CNN
+F 2 "IPRO_smart_pot:L_Radial_D7.8mm_P5.00mm_Wurth_WE-TI" H 2500 1450 50  0001 C CNN
+F 3 "https://katalog.we-online.de/pbs/datasheet/744772470.pdf" H 2500 1450 50  0001 C CNN
 F 4 "Saturation current > 1.8A. Try for low series resistance." H 2500 1450 50  0001 C CNN "Note"
 	1    2500 1450
 	1    0    0    -1  
@@ -727,7 +727,7 @@ U 1 1 5CBA4FEB
 P 2100 2250
 F 0 "R7" H 2228 2296 50  0000 L CNN
 F 1 "Unpopulated" H 2228 2205 50  0000 L CNN
-F 2 "" V 2030 2250 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2030 2250 50  0001 C CNN
 F 3 "~" H 2100 2250 50  0001 C CNN
 	1    2100 2250
 	1    0    0    -1  
@@ -847,28 +847,6 @@ Wire Wire Line
 Connection ~ 5300 2050
 Wire Wire Line
 	5300 2050 5300 2150
-$Comp
-L Switch:SW_DPST_x2 SW1
-U 2 1 5CBB41CA
-P 5900 1450
-F 0 "SW1" H 5900 1225 50  0000 C CNN
-F 1 "SW_DPST_x2" H 5900 1316 50  0000 C CNN
-F 2 "" H 5900 1450 50  0001 C CNN
-F 3 "" H 5900 1450 50  0001 C CNN
-	2    5900 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_DPST_x2 SW1
-U 1 1 5CBBCC44
-P 5550 3900
-F 0 "SW1" H 5550 4135 50  0000 C CNN
-F 1 "SW_DPST_x2" H 5550 4044 50  0000 C CNN
-F 2 "" H 5550 3900 50  0001 C CNN
-F 3 "" H 5550 3900 50  0001 C CNN
-	1    5550 3900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5650 2550 6400 2550
 Wire Wire Line
@@ -1020,4 +998,26 @@ Wire Bus Line
 	5600 4800 5600 5850
 Wire Bus Line
 	6350 4800 6350 5100
+$Comp
+L IPRO_smart_pot:SW_DPST_x2 SW?
+U 1 1 5CD68810
+P 5900 1450
+F 0 "SW?" H 5900 1685 50  0000 C CNN
+F 1 "SW_DPST_x2" H 5900 1594 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 5900 1450 50  0001 C CNN
+F 3 "https://www.ctscorp.com/wp-content/uploads/209-210.pdf" H 5900 1450 50  0001 C CNN
+	1    5900 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L IPRO_smart_pot:SW_DPST_x2 SW?
+U 2 1 5CD689C5
+P 5550 3900
+F 0 "SW?" H 5550 4135 50  0000 C CNN
+F 1 "SW_DPST_x2" H 5550 4044 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 5550 3900 50  0001 C CNN
+F 3 "https://www.ctscorp.com/wp-content/uploads/209-210.pdf" H 5550 3900 50  0001 C CNN
+	2    5550 3900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

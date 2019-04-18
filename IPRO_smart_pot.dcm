@@ -26,6 +26,11 @@ K dual nmosfet nmos/nmos
 F ~
 $ENDCMP
 #
+$CMP SW_DPST_x2
+D Single Pole Single Throw (SPST) switch, separate symbol
+K switch lever
+$ENDCMP
+#
 $CMP TP4056_board
 D Breakout board for TP4056 LiPo charger with USB
 $ENDCMP
